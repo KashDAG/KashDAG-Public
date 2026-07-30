@@ -1,7 +1,6 @@
 # KashDAG public roadmap
 
-The roadmap is evidence-driven. Dates are not promised until the relevant
-technical, operational, security, and governance gates are satisfied.
+The roadmap is evidence-driven. Dates are not promised until the relevant technical, operational, security, economic, legal, and governance gates are satisfied.
 
 ## Phase 1 — Foundation
 
@@ -10,7 +9,7 @@ technical, operational, security, and governance gates are satisfied.
 - Deterministic Layer-1 protocol foundation
 - Canonical transactions and Ed25519 identities
 - DAG execution and checkpoint finality
-- Persistent node state
+- Persistent node state and recovery boundaries
 - Wallet PWA and explorer foundation
 - Signed multi-architecture release pipeline
 
@@ -20,41 +19,51 @@ technical, operational, security, and governance gates are satisfied.
 
 - Three-validator quorum
 - Public RPC, finalized-state indexer, wallet, and explorer
+- Signed RC12 Linux x86_64 and ARM64 operator packages
 - Restart, partition/rejoin, quorum-loss, and recovery qualification
-- Monitoring and off-host backups
+- Monitoring, bounded public access, and off-host backups
 - Controlled faucet qualification
 - Public progress and network reporting
 
+**Remaining gates:** longer-duration public load and WebSocket evidence, live replacement and recovery rehearsals, and continued service-stability observations.
+
 ## Phase 3 — Developer and operator expansion
 
-**Status: planned and gated**
+**Status: active and gated**
 
-- Stable public RPC and SDK interfaces
-- Validator operator onboarding
-- Expanded independent infrastructure
-- Paginated history, subscriptions, and improved fee estimation
-- Public specifications and integration examples
+- Public validator package and verification instructions published
+- RPC, SDK, pagination, history, subscription, and fee-estimation stabilization in progress
+- Independent-operator acceptance and expanded independently operated infrastructure pending
+- Additional integration documentation and examples planned
+- Physical-device wallet qualification and independent wallet review pending
 
 ## Phase 4 — Protocol expansion
 
-**Status: future and gated**
+**Status: development candidates built; public activation closed**
 
-- Staking and validator economics
-- Governance and treasury mechanisms
-- Token standards and deterministic contract execution
-- Carefully reviewed interoperability and proof-verification modules
+Candidate work covers:
+
+- Validator economics, delegation, unbonding, rewards, and slashing accounting
+- Governance, treasury, and snapshot-bound voting
+- Fungible and non-fungible asset foundations
+- Deterministic WASM contract execution
+- Read-only indexer, SDK, explorer, and wallet audit surfaces
+
+These candidates are not active on the public testnet. Activation requires explicit protocol versioning, migration and rollback rules, approved parameters, multi-validator adversarial trials, and independent security and economic review.
 
 ## Phase 5 — Production and mainnet
 
-**Status: closed**
+**Status: not launched; gates remain closed**
 
 Mainnet requires, at minimum:
 
-- Independent security audits
-- Frozen production protocol and economic parameters
+- Independent protocol, wallet, runtime, economics, and infrastructure security audits
+- Confirmed remediation and retesting
+- Long-duration public-testnet evidence
+- Independent validator participation
+- Frozen production protocol, economic, governance, and operational parameters
 - Production legal and regulatory review
 - Mature incident response and disaster recovery
-- Independent validator participation
 - Reproducible production genesis ceremony
 - Explicit KashDAG launch authorization
 
