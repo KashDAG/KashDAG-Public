@@ -39,17 +39,18 @@ The roadmap is evidence-driven. Dates are not promised until the relevant techni
 
 ## Phase 4 — Protocol expansion
 
-**Status: development candidates built; public activation closed**
+**Status: Protocol v2 engineering milestone completed; public activation pending**
 
-Candidate work covers:
+The completed Protocol v2 engineering scope covers:
 
 - Validator economics, delegation, unbonding, rewards, and slashing accounting
 - Governance, treasury, and snapshot-bound voting
 - Fungible and non-fungible asset foundations
 - Deterministic WASM contract execution
-- Read-only indexer, SDK, explorer, and wallet audit surfaces
+- Protocol v2 RPC, indexer, SDK, explorer, and wallet integration surfaces
+- Versioned state commitments, migration boundaries, and activation controls
 
-These candidates are not active on the public testnet. Activation requires explicit protocol versioning, migration and rollback rules, approved parameters, multi-validator adversarial trials, and independent security and economic review.
+Engineering completion does not activate Protocol v2 on the public testnet. Protocol v1 remains authoritative until a separately announced, coordinated activation completes. The activation gate includes an immutable release manifest, approved parameters, migration and rollback qualification, matching multi-validator state commitments, adversarial trials, and independent security and economic review.
 
 ## Phase 5 — Production and mainnet
 
