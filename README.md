@@ -10,11 +10,12 @@ code.
 
 ## Current status
 
-**Stage:** Public testnet beta  
-**Network:** `dag-l1-testnet-2`  
-**Protocol:** Version 1  
-**Release:** Signed RC12  
-**Validators:** Three active validator identities  
+**Stage:** Public testnet beta<br>
+**Network:** `dag-l1-testnet-2`<br>
+**Active protocol:** Version 1<br>
+**Protocol v2:** Engineering milestone completed; public activation pending<br>
+**Release:** Signed RC12<br>
+**Validators:** Three active validator identities<br>
 **Mainnet:** Not launched
 
 KDG on this testnet has no monetary value. Public-testnet availability must not
@@ -22,6 +23,7 @@ be interpreted as a production-readiness, audit, investment, or mainnet claim.
 
 ## Latest update
 
+- [Protocol v2 engineering milestone completed — 2026-08-12](UPDATES/2026-08-12.md)
 - [Development update — 2026-07-30](UPDATES/2026-07-30.md)
 - [Signed RC12 validator release](https://github.com/KashDAG/KashDAG-Public/releases/tag/testnet-v0.1.0-rc12)
 

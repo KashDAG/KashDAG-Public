@@ -1,6 +1,6 @@
 # KashDAG public progress
 
-Last updated: 2026-07-30
+Last updated: 2026-08-12
 
 ## Operational public-testnet foundation
 
@@ -18,11 +18,11 @@ The following public-beta milestones have been completed:
 - The controlled faucet passed concurrency and allocation qualification and remains publicly disabled.
 - Public website, wallet PWA, RPC, indexer, explorer, identity agreement, and finality progression are covered by external monitoring.
 
-## Gated development candidates
+## Protocol v2 engineering milestone
 
-The project now has isolated development candidates for validator economics, delegation and unbonding, deterministic reward accounting, governance, fungible and non-fungible assets, and deterministic WASM contract execution.
+The Protocol v2 engineering milestone is complete. Its scope includes validator economics, delegation and unbonding, deterministic reward accounting, validator accountability, governance and treasury controls, fungible and non-fungible assets, deterministic WASM contract execution, and the associated protocol, storage, RPC, indexer, SDK, explorer, and wallet integration boundaries.
 
-These candidates are not active on the public testnet. Protocol v1 remains authoritative. Activation requires explicit versioning, migration and rollback planning, multi-validator qualification, approved parameters, and independent review.
+Protocol v2 is not yet active on the public testnet. Protocol v1 remains authoritative until the versioned activation manifest, migration and rollback qualification, approved parameters, matching multi-validator execution evidence, release artifacts, and required independent reviews complete.
 
 ## Current operating boundary
 
@@ -32,12 +32,14 @@ KashDAG is a public testnet beta, not a production or mainnet network.
 - The faucet is not publicly available.
 - Validator participation is presently controlled while independent-operator onboarding is qualified.
 - Public endpoints are subject to testnet maintenance and capacity limits.
-- Smart contracts, staking, governance, production token economics, bridges, and advanced interoperability remain gated milestones.
+- Protocol v2 smart contracts, staking, governance, and economics remain inactive until the coordinated activation gate completes.
+- Bridges and advanced interoperability remain later gated milestones.
 - Audit-readiness work does not mean an independent audit has been completed.
 - Independent security review remains required before production or mainnet representation.
 
 ## Next active work
 
+- Qualify and execute the coordinated Protocol v2 public-testnet activation process.
 - Collect longer-duration public load, WebSocket, synchronization, and recovery evidence.
 - Complete live onboarding with a truly independent validator operator.
 - Finish physical-device wallet testing and independent wallet review.
