@@ -5,7 +5,9 @@
 | Field | Value |
 | --- | --- |
 | Chain ID | `dag-l1-testnet-2` |
-| Protocol version | `1` |
+| Protocol version | `2` |
+| Active validator identities | `3` |
+| Qualified release line | `testnet-v0.2.0-rc7` |
 | Native test asset | `KDG` |
 | Display precision | 9 decimal places |
 | Account identity | Ed25519 public key |
@@ -30,6 +32,10 @@ rate limits, and response formats may change during public-testnet development.
 Transaction submission is not finality. A transaction should be represented as
 finalized only after its receipt is present in a certified finalized
 checkpoint and is visible through the authoritative RPC/indexer data path.
+
+Protocol v2 was reconciled across all three validator hosts using matching
+finalized checkpoints, state roots, and validator snapshots. This is a
+public-testnet engineering result, not an independent-audit or mainnet claim.
 
 ## Safety
 

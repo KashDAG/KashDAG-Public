@@ -6,7 +6,7 @@ Last updated: 2026-08-12
 
 The following public-beta milestones have been completed:
 
-- Signed RC12 Linux x86_64 and ARM64 testnet validator packages have published checksums, Sigstore bundles, release provenance, and operator verification instructions.
+- Signed RC7 Linux x86_64 and ARM64 testnet validator packages have published checksums, Sigstore bundles, release provenance, and operator verification instructions; macOS and Windows operator packages are also published for independent testing.
 - Three-validator quorum finalizes matching checkpoints, state roots, and validator snapshots.
 - Restart, quorum-loss, partition/rejoin, and state-recovery trials passed within the defined public-beta scope.
 - Validator services persist across host restarts and use restricted networking and loopback-only application interfaces.
@@ -20,9 +20,26 @@ The following public-beta milestones have been completed:
 
 ## Protocol v2 engineering milestone
 
-The Protocol v2 engineering milestone is complete. Its scope includes validator economics, delegation and unbonding, deterministic reward accounting, validator accountability, governance and treasury controls, fungible and non-fungible assets, deterministic WASM contract execution, and the associated protocol, storage, RPC, indexer, SDK, explorer, and wallet integration boundaries.
+Protocol v2 is active on `dag-l1-testnet-2`. Its completed scope includes validator economics, delegation and unbonding, deterministic reward accounting, validator accountability, governance and treasury controls, fungible and non-fungible assets, deterministic WASM contract execution, and the associated protocol, storage, RPC, indexer, SDK, explorer, and wallet integration boundaries.
 
-Protocol v2 is not yet active on the public testnet. Protocol v1 remains authoritative until the versioned activation manifest, migration and rollback qualification, approved parameters, matching multi-validator execution evidence, release artifacts, and required independent reviews complete.
+The three validators run the signed RC7 Protocol v2 node and have repeatedly reported matching checkpoints, state roots, and validator snapshots. The public RPC, indexer, explorer, and wallet expose the live Protocol v2 path, including the finalized KDGTEST test asset. KDGTEST has no monetary value.
+
+## Internal pre-audit checklist
+
+KashDAG completed the project-controlled Protocol v2 pre-audit engineering checklist on 2026-08-12. Completed verification includes:
+
+- RC7 deployment and three-host finality reconciliation
+- Reproducible x86_64 and ARM64 release evidence and operator-package qualification
+- Live wallet → RPC → validator → indexer → explorer verification
+- Public API, SDK, wallet, and explorer consistency checks
+- Restart, partition/rejoin, quorum-loss, recovery, equivocation, stale-vote, and clock-skew qualification
+- PostgreSQL migration/restore, pagination, and controlled-faucet concurrency qualification
+- Validator and indexer monitoring, backup, recovery-vault, and access-closure checks
+- Dependency remediation, secret preflight, and deterministic audit-bundle verification
+
+The exact candidate is frozen under `protocol-v2-preaudit-2026-08-12`. Its verified audit-bundle SHA-256 is `6de8f095c8ea7b7a07657f9fa556eaa7c381cfbef845343949af350213fea75a` and its source-tree SHA-256 is `c915c6e1744ebb0132cede500d7137399514f4119075a28ae753957e10af50e0`.
+
+“Internal pre-audit checklist complete” means KashDAG completed its own engineering and evidence gates. It does not mean an independent auditor has reviewed or approved the protocol.
 
 ## Current operating boundary
 
@@ -32,18 +49,18 @@ KashDAG is a public testnet beta, not a production or mainnet network.
 - The faucet is not publicly available.
 - Validator participation is presently controlled while independent-operator onboarding is qualified.
 - Public endpoints are subject to testnet maintenance and capacity limits.
-- Protocol v2 smart contracts, staking, governance, and economics remain inactive until the coordinated activation gate completes.
+- Protocol v2 is active for controlled public-testnet testing; testnet functionality and balances are not production assets.
 - Bridges and advanced interoperability remain later gated milestones.
-- Audit-readiness work does not mean an independent audit has been completed.
+- Internal audit-readiness work does not mean an independent audit has been completed.
 - Independent security review remains required before production or mainnet representation.
 
 ## Next active work
 
-- Qualify and execute the coordinated Protocol v2 public-testnet activation process.
 - Collect longer-duration public load, WebSocket, synchronization, and recovery evidence.
 - Complete live onboarding with a truly independent validator operator.
 - Finish physical-device wallet testing and independent wallet review.
 - Complete independent protocol, economics, runtime, and infrastructure audits and remediation confirmation.
+- Specify and prototype the gated M7 interoperability and EVM-compatibility roadmap.
 - Freeze approved production economic, governance, legal, and operational policies before any mainnet decision.
 
 Progress statements describe completed evidence only; planned or inactive capabilities are not represented as live.

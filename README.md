@@ -12,10 +12,12 @@ code.
 
 **Stage:** Public testnet beta<br>
 **Network:** `dag-l1-testnet-2`<br>
-**Active protocol:** Version 1<br>
-**Protocol v2:** Engineering milestone completed; public activation pending<br>
-**Release:** Signed RC12<br>
+**Active protocol:** Version 2<br>
+**Protocol v2:** Activated and reconciled across the three-validator testnet<br>
+**Release:** Signed `testnet-v0.2.0-rc7`<br>
 **Validators:** Three active validator identities<br>
+**Internal pre-audit checklist:** Complete<br>
+**Independent audit:** Pending<br>
 **Mainnet:** Not launched
 
 KDG on this testnet has no monetary value. Public-testnet availability must not
@@ -23,13 +25,17 @@ be interpreted as a production-readiness, audit, investment, or mainnet claim.
 
 ## Latest update
 
-**Protocol v2 engineering milestone completed — 2026-08-12**
+**Protocol v2 pre-audit engineering milestone completed — 2026-08-12**
 
-KashDAG has completed the Protocol v2 engineering scope, including validator
-economics, staking and delegation, governance, assets, deterministic WASM
-contracts, versioned state commitments, and their supporting application
-integration boundaries. Protocol v1 remains active on the public testnet until
-the separately announced, coordinated Protocol v2 activation completes.
+KashDAG has activated Protocol v2 on the public testnet and completed its
+project-controlled pre-audit engineering checklist. RC7 reconciliation,
+three-validator state agreement, public wallet/explorer verification,
+reproducible release evidence, SDK/API consistency, recovery, monitoring,
+backups, security preflight, and fault qualification are complete within the
+documented testnet scope. The candidate is frozen for independent review.
+
+This is an internal engineering-completion milestone—not an independent audit,
+production certification, or mainnet approval.
 
 [Read the complete Protocol v2 update →](UPDATES/2026-08-12.md)
 

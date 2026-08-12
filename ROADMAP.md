@@ -19,13 +19,13 @@ The roadmap is evidence-driven. Dates are not promised until the relevant techni
 
 - Three-validator quorum
 - Public RPC, finalized-state indexer, wallet, and explorer
-- Signed RC12 Linux x86_64 and ARM64 operator packages
+- Signed RC7 Linux x86_64 and ARM64 operator packages, with macOS and Windows test packages
 - Restart, partition/rejoin, quorum-loss, and recovery qualification
 - Monitoring, bounded public access, and off-host backups
 - Controlled faucet qualification
 - Public progress and network reporting
 
-**Remaining gates:** longer-duration public load and WebSocket evidence, live replacement and recovery rehearsals, and continued service-stability observations.
+**Remaining gates:** longer-duration public load and WebSocket evidence, independent-operator expansion, and continued service-stability observations.
 
 ## Phase 3 — Developer and operator expansion
 
@@ -39,7 +39,7 @@ The roadmap is evidence-driven. Dates are not promised until the relevant techni
 
 ## Phase 4 — Protocol expansion
 
-**Status: Protocol v2 engineering milestone completed; public activation pending**
+**Status: active on public testnet; internal pre-audit engineering checklist complete**
 
 The completed Protocol v2 engineering scope covers:
 
@@ -49,10 +49,29 @@ The completed Protocol v2 engineering scope covers:
 - Deterministic WASM contract execution
 - Protocol v2 RPC, indexer, SDK, explorer, and wallet integration surfaces
 - Versioned state commitments, migration boundaries, and activation controls
+- Signed RC7 activation across the three-validator public testnet
+- Matching live checkpoints, state roots, and validator snapshots
+- Frozen project-controlled pre-audit candidate and verified evidence bundle
 
-Engineering completion does not activate Protocol v2 on the public testnet. Protocol v1 remains authoritative until a separately announced, coordinated activation completes. The activation gate includes an immutable release manifest, approved parameters, migration and rollback qualification, matching multi-validator state commitments, adversarial trials, and independent security and economic review.
+Protocol v2 is active for public-testnet testing. KashDAG's internal engineering checklist, security preflight, fault qualification, recovery verification, and release reconciliation are complete for the frozen pre-audit candidate. This project-controlled completion does not replace independent security or economic review and does not authorize mainnet.
 
-## Phase 5 — Production and mainnet
+## Phase 5 — M7 interoperability and EVM compatibility
+
+**Status: planned; research and specification gated**
+
+M7 is the planned interoperability milestone. Its proposed scope includes:
+
+- Versioned interoperability and proof-verifier interfaces
+- Bounded cross-network message and asset-verification foundations
+- An EVM-compatibility layer for familiar Ethereum tooling and application migration
+- Deterministic mapping for EVM transactions, accounts, logs, receipts, gas, and finality
+- Wallet and developer-tool compatibility, including standard EVM JSON-RPC workflows where technically and safely supportable
+- Cross-runtime state commitments, upgrade controls, replay protection, and failure isolation
+- Dedicated adversarial testing and independent review before any public activation
+
+KashDAG has not represented M7, an EVM runtime, an EVM bridge, or Ethereum-tool compatibility as live. Architecture, compatibility level, trust assumptions, and activation parameters must be specified and reviewed before implementation is treated as production work.
+
+## Phase 6 — Production and mainnet
 
 **Status: not launched; gates remain closed**
 
