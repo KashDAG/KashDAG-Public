@@ -1,7 +1,7 @@
 # KashDAG Public
 
 KashDAG Public is the official transparency repository for KashDAG development,
-public-testnet progress, network updates, release verification information, and
+Control Mainnet progress, network updates, release verification information, and
 community-facing documentation.
 
 This repository intentionally does **not** contain the proprietary KashDAG
@@ -10,18 +10,19 @@ code.
 
 ## Current status
 
-**Stage:** Public testnet beta<br>
-**Network:** `dag-l1-testnet-2`<br>
+**Stage:** Controlled mainnet operation<br>
+**Network:** `kashdag-mainnet`<br>
 **Active protocol:** Version 2<br>
-**Protocol v2:** Activated and reconciled across the three-validator testnet<br>
-**Release:** Signed `testnet-v0.2.0-rc7`<br>
+**Protocol v2:** Activated across the canonical three-validator set<br>
+**Independent onboarding release:** Signed Linux `mainnet-v0.2.0-rc8.6-linux`<br>
 **Validators:** Three active validator identities<br>
 **Internal pre-audit checklist:** Complete<br>
 **Independent audit:** Pending<br>
-**Mainnet:** Not launched
+**Open validator admission:** Qualification required; no candidate is counted before finalized atomic activation
 
-KDG on this testnet has no monetary value. Public-testnet availability must not
-be interpreted as a production-readiness, audit, investment, or mainnet claim.
+Control Mainnet availability must not be interpreted as an independent audit,
+production certification, investment guarantee, or unrestricted validator
+admission. A downloaded node begins outside consensus and cannot affect quorum.
 
 ## Latest update
 
@@ -51,8 +52,10 @@ production certification, or mainnet approval.
 | Website | https://kashdag.com |
 | Wallet | https://wallet.kashdag.com |
 | Explorer | https://explorer.kashdag.com |
-| Read-only RPC | https://rpc.testnet.kashdag.com/rpc |
-| Finalized-state indexer | https://indexer.testnet.kashdag.com/api/indexer |
+| Read-only RPC | https://rpc.kashdag.com/rpc |
+| Redundant read-only RPC | https://rpc2.kashdag.com/rpc |
+| Finalized-state indexer | https://indexer.kashdag.com/api/indexer |
+| Redundant finalized-state indexer | https://indexer2.kashdag.com/api/indexer |
 
 ## Documentation
 
