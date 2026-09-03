@@ -7,7 +7,8 @@
 | Chain ID | `kashdag-mainnet` |
 | Protocol version | `2` |
 | Active validator identities | `3` |
-| Independent onboarding release | `mainnet-v0.2.0-rc8.6-linux` |
+| Latest signed native release | `mainnet-v0.2.0-rc8.14` |
+| Production Ubuntu onboarding release | `mainnet-v0.2.0-rc8.11-linux` |
 | Native asset | `KDG` |
 | Display precision | 9 decimal places |
 | Account identity | Ed25519 public key |

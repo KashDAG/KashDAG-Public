@@ -14,7 +14,8 @@ code.
 **Network:** `kashdag-mainnet`<br>
 **Active protocol:** Version 2<br>
 **Protocol v2:** Activated across the canonical three-validator set<br>
-**Independent onboarding release:** Signed Linux `mainnet-v0.2.0-rc8.6-linux`<br>
+**Latest signed native release:** `mainnet-v0.2.0-rc8.14`<br>
+**Production onboarding release:** Ubuntu `mainnet-v0.2.0-rc8.11-linux`<br>
 **Validators:** Three active validator identities<br>
 **Internal pre-audit checklist:** Complete<br>
 **Independent audit:** Pending<br>
@@ -25,6 +26,18 @@ production certification, investment guarantee, or unrestricted validator
 admission. A downloaded node begins outside consensus and cannot affect quorum.
 
 ## Latest update
+
+**RC8.14 signed cross-platform release published — 2026-09-03**
+
+RC8.14 provides signed native Linux, macOS, and Windows packages with checksum
+and signature evidence. The five-minute production onboarding path remains the
+signed RC8.11 Ubuntu release; macOS and Windows are development and controlled-
+test builds, not the production always-on validator path.
+
+- [Verify RC8.14 release evidence](https://github.com/KashDAG/KashDAG-Public/releases/tag/mainnet-v0.2.0-rc8.14)
+- [Open the production Ubuntu onboarder](https://github.com/KashDAG/KashDAG-Public/releases/tag/mainnet-v0.2.0-rc8.11-linux)
+
+### Previous updates
 
 **Protocol v2 pre-audit engineering milestone completed — 2026-08-12**
 
@@ -39,8 +52,6 @@ This is an internal engineering-completion milestone—not an independent audit,
 production certification, or mainnet approval.
 
 [Read the complete Protocol v2 update →](UPDATES/2026-08-12.md)
-
-### Previous updates
 
 - [Development update — 2026-07-30](UPDATES/2026-07-30.md)
 - [Signed RC12 validator release](https://github.com/KashDAG/KashDAG-Public/releases/tag/testnet-v0.1.0-rc12)
